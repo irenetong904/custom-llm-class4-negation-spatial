@@ -302,10 +302,12 @@ shows all three real "You: ... / Model: ..." exchanges, and every turn is saved 
 source .venv/bin/activate
 python3 chat.py --model llm_runs/20260922T073639_742714Z/model.pt --transcript path/to/new_transcript.json
 ```
-Type a prompt, see a reply, type `/quit` to stop. I ran this live in a terminal and
-saved the session to
-[`chat_transcript_terminal.json`](llm_runs/20260922T073639_742714Z/chat_transcript_terminal.json)
-(screenshot: see the "chat.py demo" terminal tab from this session).
+Type a prompt, see a reply, type `/quit` to stop. I ran this live and interactively in
+a terminal (same model, same three prompts, same deterministic per-turn seeds — so the
+replies are identical to the notebook's) and saved the session to
+[`chat_transcript_terminal.json`](llm_runs/20260922T073639_742714Z/chat_transcript_terminal.json):
+
+![Terminal chat session: three real prompts and replies from the trained model](evidence/chat_terminal_screenshot.png)
 
 **Three real interactions** (from `chat_transcript.json`, temperature 0.8, 24-token max,
 fresh 48-token context per prompt — no memory between turns):
