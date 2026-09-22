@@ -74,6 +74,7 @@ also shows zero warnings and zero ignored files).
 |---|---|---|
 | Notebook | [experiment1_starter.ipynb](experiment1_starter.ipynb) | [experiment2_expanded.ipynb](experiment2_expanded.ipynb) |
 | Run folder | [llm_runs/20260922T073557_880181Z/](llm_runs/20260922T073557_880181Z/) | [llm_runs/20260922T073639_742714Z/](llm_runs/20260922T073639_742714Z/) |
+| Results ZIP | [.zip](llm_runs/20260922T073557_880181Z.zip) | [.zip](llm_runs/20260922T073639_742714Z.zip) |
 | Completed steps | 5,000 (not interrupted) | 5,000 (not interrupted) |
 | Elapsed time | 16.08 s | 16.05 s |
 | Parameters | 111,872 | 120,768 |
@@ -86,7 +87,9 @@ PyTorch 2.8.0, Python 3.9.6) — not Google Colab. I originally planned to use C
 switched to running everything locally via a Python venv and `jupyter nbconvert
 --execute` so I could iterate and verify results directly; the model is tiny enough
 (2 blocks, 4 heads, 64-dim, 48-token context) that both 5,000-step runs completed in
-about 16 seconds each on CPU. All settings (`config.json`) and full logs
+about 16 seconds each on CPU. All settings
+([config.json exp 1](llm_runs/20260922T073557_880181Z/config.json),
+[config.json exp 2](llm_runs/20260922T073639_742714Z/config.json)) and full logs
 ([training.csv](llm_runs/20260922T073639_742714Z/training.csv),
 [training_summary.json](llm_runs/20260922T073639_742714Z/training_summary.json)) are
 linked per run above.
@@ -248,6 +251,22 @@ run, not just the summary above.
 | **negation** (3) | 0/3, unscorable | 0/3, unscorable |
 | **spatial_relations** (3) | 0/3, unscorable | 0/3, unscorable |
 
+**Actual free continuations** (every case saves an unrestricted generation alongside its
+multiple-choice score — this is *not* the scored answer, just what the model actually
+writes; full text for all 48 cases per stage is in each `eval_results.json`/`.csv`
+linked above). Two examples from Experiment 2, final stage:
+
+| Case | Category | Prompt | Scored answer | Free continuation |
+|---|---|---|---|---|
+| `lang_07` | `domain_context` (correct, scored) | "the report about the surgeon explains the" | predicted `patient` (correct) | `"health in detail ."` |
+| `lang_31` | `negation` (`out_of_vocabulary`, unscored) | "the box is not red . it is blue . the box is" | — (box/red/blue not in vocabulary) | `"basket ."` |
+
+`lang_07` shows the two measures agreeing (correct multiple-choice pick, and a
+plausible on-template free continuation). `lang_31` shows them diverging in the way
+that matters most: even with zero scorable multiple-choice signal, the model still
+produces *something* fluent from its own vocabulary ("basket") — evidence it's
+pattern-completing from what it knows, not failing silently.
+
 **Which starter patterns worked?** All 16 `starter_patterns` cases (the domain
 co-occurrence and domain-place associations) scored correctly in both trained models —
 the reserved test prefixes are withheld from training
@@ -297,7 +316,7 @@ three consecutive chat cells (I duplicated the section-10 cell with three differ
 shows all three real "You: ... / Model: ..." exchanges, and every turn is saved to
 [`chat_transcript.json`](llm_runs/20260922T073639_742714Z/chat_transcript.json).
 
-**2. Terminal (bonus, same model):**
+**2. Terminal (bonus, same model):** [`chat.py`](chat.py) is a standalone script — launch it with:
 ```bash
 source .venv/bin/activate
 python3 chat.py --model llm_runs/20260922T073639_742714Z/model.pt --transcript path/to/new_transcript.json

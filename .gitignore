@@ -3,8 +3,11 @@ __pycache__/
 .venv/
 /llm_runs/*
 !/llm_runs/20260922T073557_880181Z/
+!/llm_runs/20260922T073557_880181Z.zip
 !/llm_runs/20260922T073639_742714Z/
+!/llm_runs/20260922T073639_742714Z.zip
 !/llm_runs/pilot_comma_joined_20260922T074038Z/
+!/llm_runs/pilot_comma_joined_20260922T074038Z.zip
 names.txt
 .DS_Store
 /corpus/*
