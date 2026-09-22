@@ -12,6 +12,9 @@ tokenizers; changing the model name alone would not turn character tokens into w
 · [Assignment text](ASSIGNMENT.md)
 · [3D embedding viewer](embedding-viewer.html)
 
+> **This is a completed student submission.** See [STUDENT_README.md](STUDENT_README.md)
+> for the executed experiments, evidence, and explanations graded for this assignment.
+
 ## Start here
 
 1. Open the notebook in Colab and save your own copy. The default CPU runtime is enough.

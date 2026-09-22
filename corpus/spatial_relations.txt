@@ -1,0 +1,49 @@
+the dog is in front of the gate . the gate is behind the dog
+the jar contains the coin . the coin sits inside the jar
+the pencil is to the left of the eraser . the eraser is to the right of the pencil
+the map is inside the folder . the folder holds the map
+the lamp sits right of the chair . the chair sits left of the lamp
+the ladder is above the wall . the wall is below the ladder
+the cabinet is under the vase . the vase is over the cabinet
+the shoe sits right of the sock . the sock sits left of the shoe
+the painting is above the sofa . the sofa is below the painting
+the coin is inside the jar . the jar holds the coin
+the kite is above the tree . the tree is below the kite
+the sock is to the left of the shoe . the shoe is to the right of the sock
+the window is next to the plant . the door is next to the plant
+the book sits between the pen and the clock
+the wall is under the ladder . the ladder is over the wall
+the eraser sits right of the pencil . the pencil sits left of the eraser
+the plate is next to the cup . the bowl is next to the cup
+the pen is next to the book . the clock is next to the book
+the bike is in front of the fence . the fence is behind the bike
+the plate sits right of the mug . the mug sits left of the plate
+the lamp sits between the sofa and the shelf
+the cat is in front of the curtain . the curtain is behind the cat
+the cup sits between the plate and the bowl
+the bench is in front of the tree . the tree is behind the bench
+the apple is inside the basket . the basket holds the apple
+the vase is above the cabinet . the cabinet is below the vase
+the clock is above the shelf . the shelf is below the clock
+the shelf is under the clock . the clock is over the shelf
+the basket contains the apple . the apple sits inside the basket
+the drawer contains the key . the key sits inside the drawer
+the car is in front of the garage . the garage is behind the car
+the sofa is under the painting . the painting is over the sofa
+the mirror is above the sink . the sink is below the mirror
+the toy is inside the crate . the crate holds the toy
+the chair is to the left of the lamp . the lamp is to the right of the chair
+the crate contains the toy . the toy sits inside the crate
+the sofa is next to the lamp . the shelf is next to the lamp
+the key is inside the drawer . the drawer holds the key
+the plant sits between the window and the door
+the letter is inside the envelope . the envelope holds the letter
+the envelope contains the letter . the letter sits inside the envelope
+the folder contains the map . the map sits inside the folder
+the wallet sits right of the phone . the phone sits left of the wallet
+the tree is under the kite . the kite is over the tree
+the frame sits right of the vase . the vase sits left of the frame
+the sink is under the mirror . the mirror is over the sink
+the phone is to the left of the wallet . the wallet is to the right of the phone
+the vase is to the left of the frame . the frame is to the right of the vase
+the mug is to the left of the plate . the plate is to the right of the mug

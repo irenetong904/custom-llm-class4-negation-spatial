@@ -1,0 +1,35 @@
+{
+  "model": "llm_runs/20260922T073639_742714Z/model.pt",
+  "model_sha256": "7e6148fcef15220f049164f82c4eb5b086565d0ff670ca534a2d5c56d0c77542",
+  "completed_steps": 5000,
+  "fresh_context_per_prompt": true,
+  "temperature": 0.8,
+  "max_tokens": 24,
+  "turns": [
+    {
+      "prompt": "diego did not choose a jacket . diego chose",
+      "seed": 2026,
+      "response": ".",
+      "unknown_prompt_words": [
+        "jacket"
+      ],
+      "prompt_truncated": false
+    },
+    {
+      "prompt": "the kite is above the shelf . the shelf is",
+      "seed": 2027,
+      "response": ".",
+      "unknown_prompt_words": [],
+      "prompt_truncated": false
+    },
+    {
+      "prompt": "the weather today is",
+      "seed": 2028,
+      "response": "over the team",
+      "unknown_prompt_words": [
+        "weather"
+      ],
+      "prompt_truncated": false
+    }
+  ]
+}

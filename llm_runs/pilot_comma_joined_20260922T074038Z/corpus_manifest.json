@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "file": "negation.txt",
+      "bytes": 2649,
+      "sha256": "ec56931cf9b984b58567c4517c4bd9de48214da00eddaa85680719e8db687501",
+      "warnings": [],
+      "characters": 2649,
+      "passages": 40,
+      "unique_passages": 40,
+      "preview": "nadia did not choose a jacket , nadia chose a sweater , nadia chose\noscar did not order soda , oscar ordered lemonade , oscar ordered\nthe bag is not clean , it is dirty , the bag is dirty\nthe wall is not smooth , it is rough , the wall is rough\nthe table is not wet , it is dry , the table is dry\nthe"
+    },
+    {
+      "file": "spatial_relations.txt",
+      "bytes": 3059,
+      "sha256": "3d9e48c4f56300ec1f4765e385c13b3a8454a32683403b3acee4e622e0238cfd",
+      "warnings": [],
+      "characters": 3059,
+      "passages": 49,
+      "unique_passages": 49,
+      "preview": "the dog is in front of the gate , the gate is behind the dog\nthe jar contains the coin , the coin sits inside the jar\nthe pencil is to the left of the eraser , the eraser is to the right of the pencil\nthe map is inside the folder , the folder holds the map\nthe lamp sits right of the chair , the chai"
+    }
+  ],
+  "ignored": [],
+  "external_passages": 89,
+  "mode": "classroom",
+  "base_passages": 6200,
+  "unique_passages": 4681,
+  "new_unique_passages": 89,
+  "duplicates_removed": 1608,
+  "max_passage_tokens": 47,
+  "split_unit": "deduplicated passage, not source file"
+}
